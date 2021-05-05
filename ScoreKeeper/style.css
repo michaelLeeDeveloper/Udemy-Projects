@@ -1,0 +1,13 @@
+.scoreContainer {
+    height: 200px;
+    width: 200px;
+}
+.buttonContainer {
+    margin: auto;
+    width : 400px;
+}
+
+.pointButton {
+    width: 125px;
+    margin: 0;
+}
