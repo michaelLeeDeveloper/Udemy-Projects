@@ -15,12 +15,12 @@ class DieGame extends Component {
 
     rollDice() {
         this.setState({
-            die1: Math.floor(Math.random() * 6) + 1,
-            die2: Math.floor(Math.random() * 6) + 1,
             isRolling: true
         });
         setTimeout(() => {
             this.setState({
+                die1: Math.floor(Math.random() * 6) + 1,
+                die2: Math.floor(Math.random() * 6) + 1,
                 isRolling: false
             });
         }, 1000)
