@@ -3,11 +3,7 @@ import "./box.css"
 
 
 class Box extends Component {
-    static defaultProps = {
-        allColors: [
-            "purple", "magenta", "pink", "lavender", "blueViolet", "darkMagenta", "darkViolet", "darkOrchid", "orchid"
-        ]
-    }
+
 
     constructor(props) {
         super(props);
@@ -23,14 +19,16 @@ class Box extends Component {
     }
 
     changeColor() {
-        let newColor = this.random(this.props.allColors);
+        let newColor;
         do {
-            this.setState({
-                color: newColor
-            })
+            newColor = this.random(this.props.colors);
         } while (
             newColor === this.state.color
         )
+
+        this.setState({
+            color: newColor
+        })
     }
 
     handleClick() {
