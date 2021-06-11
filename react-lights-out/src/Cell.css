@@ -1,0 +1,19 @@
+.Cell {
+  height: 100px;
+  width: 100px;
+  background-color: darkgray;
+}
+
+.Cell-lit {
+  background-color: purple;
+  -webkit-box-shadow: inset 0 1px 3px purple,0 1px 0 violet;
+  box-shadow: inset 0 1px 3px purple;
+
+}
+
+.Cell-lit:focus {
+
+  border: 1px solid rgb(86, 180, 239);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.05) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+}
+
